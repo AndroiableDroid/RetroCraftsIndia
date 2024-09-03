@@ -9,8 +9,8 @@
 
 <channel>
 	<title>ibad &#8211; Retro Crafts India</title>
-	<atom:link href="/index.php/author/ibad/feed/" rel="self" type="application/rss+xml" />
-	<link></link>
+	<atom:link href="https://androiabledroid.github.io/RetroCraftsIndia/index.php/author/ibad/feed/" rel="self" type="application/rss+xml" />
+	<link>https://androiabledroid.github.io/RetroCraftsIndia</link>
 	<description></description>
 	<lastBuildDate>Mon, 02 Sep 2024 14:12:54 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,20 +21,20 @@
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Hello world!</title>
-		<link>/index.php/2024/09/02/hello-world/</link>
-					<comments>/index.php/2024/09/02/hello-world/#comments</comments>
+		<link>https://androiabledroid.github.io/RetroCraftsIndia/index.php/2024/09/02/hello-world/</link>
+					<comments>https://androiabledroid.github.io/RetroCraftsIndia/index.php/2024/09/02/hello-world/#comments</comments>
 		
 		<dc:creator><![CDATA[ibad]]></dc:creator>
 		<pubDate>Mon, 02 Sep 2024 14:12:54 +0000</pubDate>
 				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">/?p=1</guid>
+		<guid isPermaLink="false">https://androiabledroid.github.io/RetroCraftsIndia/?p=1</guid>
 
 					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
 										<content:encoded><![CDATA[
 <p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/index.php/2024/09/02/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>https://androiabledroid.github.io/RetroCraftsIndia/index.php/2024/09/02/hello-world/feed/</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		

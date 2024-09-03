@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comments for Retro Crafts India	</title>
-	<atom:link href="/index.php/comments/feed/" rel="self" type="application/rss+xml" />
-	<link></link>
+	<atom:link href="https://androiabledroid.github.io/RetroCraftsIndia/index.php/comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://androiabledroid.github.io/RetroCraftsIndia</link>
 	<description></description>
 	<lastBuildDate>Mon, 02 Sep 2024 14:12:54 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,11 +20,11 @@
 	<item>
 		<title>
 		Comment on Hello world! by A WordPress Commenter		</title>
-		<link>/index.php/2024/09/02/hello-world/#comment-1</link>
+		<link>https://androiabledroid.github.io/RetroCraftsIndia/index.php/2024/09/02/hello-world/#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Mon, 02 Sep 2024 14:12:54 +0000</pubDate>
-		<guid isPermaLink="false">/?p=1#comment-1</guid>
+		<guid isPermaLink="false">https://androiabledroid.github.io/RetroCraftsIndia/?p=1#comment-1</guid>
 
 					<description><![CDATA[Hi, this is a comment.
 To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.
