@@ -64,18 +64,35 @@
 			position: relative
 		}
 	</style>
-	<style id="wp-block-page-list-inline-css">
-		.wp-block-navigation .wp-block-page-list {
-			align-items: var(--navigation-layout-align, initial);
-			background-color: inherit;
-			display: flex;
-			flex-direction: var(--navigation-layout-direction, initial);
-			flex-wrap: var(--navigation-layout-wrap, wrap);
-			justify-content: var(--navigation-layout-justify, initial)
+	<style id="wp-block-navigation-link-inline-css">
+		.wp-block-navigation .wp-block-navigation-item__label {
+			overflow-wrap: break-word
 		}
 
-		.wp-block-navigation .wp-block-navigation-item {
-			background-color: inherit
+		.wp-block-navigation .wp-block-navigation-item__description {
+			display: none
+		}
+
+		.link-ui-tools {
+			border-top: 1px solid #f0f0f0;
+			padding: 8px
+		}
+
+		.link-ui-block-inserter {
+			padding-top: 8px
+		}
+
+		.link-ui-block-inserter__back {
+			margin-left: 8px;
+			text-transform: uppercase
+		}
+
+		.is-style-arrow-link .wp-block-navigation-item__label:after {
+			content: "\2197";
+			padding-inline-start: 0.25rem;
+			vertical-align: middle;
+			text-decoration: none;
+			display: inline-block;
 		}
 	</style>
 	<link rel="stylesheet" id="wp-block-navigation-css" href="wp-includes/blocks/navigation/style.min.css?ver=6.6.1"
@@ -1435,6 +1452,13 @@
 			}
 		}
 
+		@keyframes fade-out {
+			to {
+				scale: 0;
+				opacity: 0;
+			}
+		}
+
 		.transform-origin-left {
 			transform-origin: left;
 		}
@@ -1451,6 +1475,12 @@
 				animation-range-end: 20%;
 			}
 
+			.fade-out-animation-scroll {
+				animation: fade-out linear forwards;
+				animation-timeline: view();
+				animation-range-start: 71%;
+			}
+
 			.no-scale-no-opacity {
 				scale: 0;
 				opacity: 0;
@@ -1463,6 +1493,21 @@
 			.no-opacity {
 				opacity: 0;
 			}
+
+			.scale-opacity {
+				scale: 1;
+				opacity: 1;
+			}
+
+			.scale {
+				scale: 1;
+			}
+
+			.opacity {
+				opacity: 1;
+			}
+
+
 		}
 
 		:root :where(.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th) {
@@ -1761,7 +1806,7 @@
 		}
 	</style>
 	<style id="block-style-variation-styles-inline-css">
-		:root :where(.wp-block-image.is-style-rounded--3bbc8bb1cff3acf206e6e942348ebfc9 img, .wp-block-image.is-style-rounded--3bbc8bb1cff3acf206e6e942348ebfc9 .wp-block-image__crop-area, .wp-block-image.is-style-rounded--3bbc8bb1cff3acf206e6e942348ebfc9 .components-placeholder) {
+		:root :where(.wp-block-image.is-style-rounded--40f2137cce6e2b5bf3a74b2f31e6a168 img, .wp-block-image.is-style-rounded--40f2137cce6e2b5bf3a74b2f31e6a168 .wp-block-image__crop-area, .wp-block-image.is-style-rounded--40f2137cce6e2b5bf3a74b2f31e6a168 .components-placeholder) {
 			border-radius: var(--wp--preset--spacing--20);
 		}
 
@@ -2151,24 +2196,26 @@
 											data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
 											<ul
 												class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation">
-												<ul class="wp-block-page-list">
-													<li
-														class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click">
-														<a class="wp-block-pages-list__item__link wp-block-navigation-item__content"
-															href="index.php/about/">About</a></li>
-													<li
-														class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click">
-														<a class="wp-block-pages-list__item__link wp-block-navigation-item__content"
-															href="index.php/blog/">Blog</a></li>
-													<li
-														class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click">
-														<a class="wp-block-pages-list__item__link wp-block-navigation-item__content"
-															href="index.php/contact/">Contact</a></li>
-													<li
-														class="wp-block-pages-list__item current-menu-item wp-block-navigation-item open-on-hover-click menu-item-home">
-														<a class="wp-block-pages-list__item__link wp-block-navigation-item__content"
-															href="/" aria-current="page">Home</a></li>
-												</ul>
+												<li class=" wp-block-navigation-item wp-block-navigation-link"><a
+														class="wp-block-navigation-item__content"
+														href="index.php/about/"><span
+															class="wp-block-navigation-item__label">About</span></a>
+												</li>
+												<li class=" wp-block-navigation-item wp-block-navigation-link"><a
+														class="wp-block-navigation-item__content"
+														href="index.php/categories"><span
+															class="wp-block-navigation-item__label">Categories</span></a>
+												</li>
+												<li class=" wp-block-navigation-item wp-block-navigation-link"><a
+														class="wp-block-navigation-item__content"
+														href="index.php/contact/"><span
+															class="wp-block-navigation-item__label">Contact</span></a>
+												</li>
+												<li
+													class=" wp-block-navigation-item current-menu-item wp-block-navigation-link">
+													<a class="wp-block-navigation-item__content" href="/"
+														aria-current="page"><span
+															class="wp-block-navigation-item__label">Home</span></a></li>
 											</ul>
 										</div>
 									</div>
@@ -2195,8 +2242,9 @@
 					style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
 					<div
 						class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-7 wp-block-group-is-layout-constrained">
-						<h1 class="wp-block-heading has-text-align-center has-x-large-font-size">A commitment to best
-							quality with fine craftsmanship</h1>
+						<h1
+							class="wp-block-heading has-text-align-center fade-out-animation-scroll has-x-large-font-size">
+							A commitment to best quality with fine craftsmanship</h1>
 
 
 
@@ -2204,8 +2252,8 @@
 
 
 
-						<p class="has-text-align-center">Retro Crafts India is a provides most demanded products with
-							best quality</p>
+						<p class="has-text-align-center fade-out-animation-scroll">Retro Crafts India is a provides most
+							demanded products with best quality</p>
 
 
 
@@ -2215,8 +2263,9 @@
 
 						<div
 							class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
-							<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"
-									href="index.php/about/">About us</a></div>
+							<div class="wp-block-button fade-out-animation-scroll"><a
+									class="wp-block-button__link wp-element-button" href="index.php/about/">About
+									us</a></div>
 						</div>
 					</div>
 
@@ -2227,7 +2276,7 @@
 
 
 					<figure
-						class="wp-block-image alignwide size-full is-style-rounded width-100 is-style-rounded--3bbc8bb1cff3acf206e6e942348ebfc9">
+						class="wp-block-image alignwide size-full is-style-rounded width-100 fade-out-animation-scroll is-style-rounded--40f2137cce6e2b5bf3a74b2f31e6a168">
 						<img fetchpriority="high" decoding="async" width="775" height="482"
 							src="wp-content/uploads/2024/09/P1.png" alt="" class="wp-image-44"></figure>
 				</div>
