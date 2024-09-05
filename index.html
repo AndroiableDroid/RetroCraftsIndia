@@ -1764,6 +1764,17 @@
 			}
 		}
 
+		.lightbox-image-container {
+			width: auto !important;
+		}
+
+		.lightbox-image-container>figure>img {
+			aspect-ratio: unset !important;
+			object-fit: fill !important;
+			min-width: unset;
+			width: 100% !important;
+		}
+
 		:root :where(.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th) {
 			background-color: var(--wp--preset--color--contrast-2);
 			color: var(--wp--preset--color--base);
