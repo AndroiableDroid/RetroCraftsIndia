@@ -1765,14 +1765,17 @@
 		}
 
 		.lightbox-image-container {
+			width: 100% !important;
+		}
+
+		.lightbox-image-container>figure {
 			width: auto !important;
 		}
 
 		.lightbox-image-container>figure>img {
 			aspect-ratio: unset !important;
-			object-fit: fill !important;
-			min-width: unset;
-			width: 100% !important;
+			object-fit: none !important;
+			min-width: fit-content !important;
 		}
 
 		:root :where(.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th) {
@@ -2071,7 +2074,7 @@
 		}
 	</style>
 	<style id="block-style-variation-styles-inline-css">
-		:root :where(.wp-block-image.is-style-rounded--f75e94e3b111fa6e2cda2330e4fb9c3f img, .wp-block-image.is-style-rounded--f75e94e3b111fa6e2cda2330e4fb9c3f .wp-block-image__crop-area, .wp-block-image.is-style-rounded--f75e94e3b111fa6e2cda2330e4fb9c3f .components-placeholder) {
+		:root :where(.wp-block-image.is-style-rounded--aac4ec9017ff10733553d517bb06e01a img, .wp-block-image.is-style-rounded--aac4ec9017ff10733553d517bb06e01a .wp-block-image__crop-area, .wp-block-image.is-style-rounded--aac4ec9017ff10733553d517bb06e01a .components-placeholder) {
 			border-radius: var(--wp--preset--spacing--20);
 		}
 
@@ -2158,8 +2161,8 @@
 		}
 
 		.wp-container-core-group-is-layout-7>.alignfull {
-			margin-right: calc(var(--wp--preset--spacing--50) * -1);
-			margin-left: calc(var(--wp--preset--spacing--50) * -1);
+			margin-right: calc(0px * -1);
+			margin-left: calc(0px * -1);
 		}
 
 		.wp-container-content-3 {
@@ -2537,7 +2540,7 @@
 		<main class="wp-block-group is-layout-flow wp-container-core-group-is-layout-14 wp-block-group-is-layout-flow"
 			style="margin-top:0">
 			<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-is-layout-7 wp-block-group-is-layout-constrained"
-				style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+				style="padding-top:var(--wp--preset--spacing--50);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0">
 				<div
 					class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-6 wp-block-group-is-layout-constrained">
 					<h1 class="wp-block-heading has-text-align-center fade-out-animation-scroll has-x-large-font-size">A
@@ -2568,7 +2571,7 @@
 
 
 				<figure
-					class="wp-block-image alignwide size-full is-style-rounded width-100 fade-out-animation-scroll is-style-rounded--f75e94e3b111fa6e2cda2330e4fb9c3f">
+					class="wp-block-image alignwide size-full is-style-rounded width-100 fade-out-animation-scroll is-style-rounded--aac4ec9017ff10733553d517bb06e01a">
 					<img fetchpriority="high" width="7680" height="4317"
 						src="https://androiabledroid.github.io/RetroCraftsIndia/wp-content/uploads/2024/09/P1.jpg"
 						alt="" class="wp-image-83"></figure>
@@ -2853,13 +2856,7 @@
 				class="wp-block-group alignwide has-global-padding is-layout-constrained wp-block-group-is-layout-constrained">
 				<div class="wp-block-group alignwide width-100 is-layout-flow wp-block-group-is-layout-flow"
 					style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
-					<figure class="wp-block-image size-full is-resized"><img decoding="async"
-							src="https://androiabledroid.github.io/RetroCraftsIndia/wp-content/themes/twentytwentyfour/assets/images/icon-message.webp"
-							alt="" style="width:40px;height:auto"></figure>
-
-
-
-					<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+					<hr class="wp-block-separator has-alpha-channel-opacity width-100 is-style-default">
 
 
 

@@ -1649,14 +1649,17 @@
 		}
 
 		.lightbox-image-container {
+			width: 100% !important;
+		}
+
+		.lightbox-image-container>figure {
 			width: auto !important;
 		}
 
 		.lightbox-image-container>figure>img {
 			aspect-ratio: unset !important;
-			object-fit: fill !important;
-			min-width: unset;
-			width: 100% !important;
+			object-fit: none !important;
+			min-width: fit-content !important;
 		}
 
 		:root :where(.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th) {
