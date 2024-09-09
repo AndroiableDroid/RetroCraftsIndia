@@ -113,6 +113,76 @@
 		/*! This file is auto-generated */
 		!function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "🏳️‍⚧️", "🏳️​⚧️") ? !1 : !n(e, "🇺🇳", "🇺​🇳") && !n(e, "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿"); case "emoji": return !n(e, "🐦‍⬛", "🐦​⬛") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
 	</script>
+	<link rel="stylesheet" id="metaslider-flex-slider-css"
+		href="https://retrocraftsindia.com/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.90.1"
+		media="all" property="stylesheet">
+	<link rel="stylesheet" id="metaslider-public-css"
+		href="https://retrocraftsindia.com/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.90.1"
+		media="all" property="stylesheet">
+	<style id="metaslider-public-inline-css">
+		#metaslider_173.flexslider .slides li {
+			margin-right: 0px !important;
+		}
+
+		@media only screen and (max-width: 767px) {
+			body:after {
+				display: none;
+				content: "smartphone";
+			}
+
+			.hide-arrows-smartphone .flex-direction-nav,
+			.hide-navigation-smartphone .flex-control-paging,
+			.hide-navigation-smartphone .flex-control-nav,
+			.hide-navigation-smartphone .filmstrip {
+				display: none !important;
+			}
+		}
+
+		@media only screen and (min-width : 768px) and (max-width: 1023px) {
+			body:after {
+				display: none;
+				content: "tablet";
+			}
+
+			.hide-arrows-tablet .flex-direction-nav,
+			.hide-navigation-tablet .flex-control-paging,
+			.hide-navigation-tablet .flex-control-nav,
+			.hide-navigation-tablet .filmstrip {
+				display: none !important;
+			}
+		}
+
+		@media only screen and (min-width : 1024px) and (max-width: 1439px) {
+			body:after {
+				display: none;
+				content: "laptop";
+			}
+
+			.hide-arrows-laptop .flex-direction-nav,
+			.hide-navigation-laptop .flex-control-paging,
+			.hide-navigation-laptop .flex-control-nav,
+			.hide-navigation-laptop .filmstrip {
+				display: none !important;
+			}
+		}
+
+		@media only screen and (min-width : 1440px) {
+			body:after {
+				display: none;
+				content: "desktop";
+			}
+
+			.hide-arrows-desktop .flex-direction-nav,
+			.hide-navigation-desktop .flex-control-paging,
+			.hide-navigation-desktop .flex-control-nav,
+			.hide-navigation-desktop .filmstrip {
+				display: none !important;
+			}
+		}
+	</style>
+	<link rel="stylesheet" id="metaslider_highway_theme_styles-css"
+		href="https://retrocraftsindia.com/wp-content/plugins/ml-slider/themes/highway/v1.0.0/style.min.css?ver=1.0.0"
+		media="all" property="stylesheet">
 	<style id="wp-block-site-logo-inline-css">
 		.wp-block-site-logo {
 			box-sizing: border-box;
@@ -473,6 +543,117 @@
 			text-align: center
 		}
 	</style>
+	<style id="wp-block-columns-inline-css">
+		.wp-block-columns {
+			align-items: normal !important;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap !important
+		}
+
+		@media (min-width:782px) {
+			.wp-block-columns {
+				flex-wrap: nowrap !important
+			}
+		}
+
+		.wp-block-columns.are-vertically-aligned-top {
+			align-items: flex-start
+		}
+
+		.wp-block-columns.are-vertically-aligned-center {
+			align-items: center
+		}
+
+		.wp-block-columns.are-vertically-aligned-bottom {
+			align-items: flex-end
+		}
+
+		@media (max-width:781px) {
+			.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+				flex-basis: 100% !important
+			}
+		}
+
+		@media (min-width:782px) {
+			.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
+				flex-basis: 0;
+				flex-grow: 1
+			}
+
+			.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
+				flex-grow: 0
+			}
+		}
+
+		.wp-block-columns.is-not-stacked-on-mobile {
+			flex-wrap: nowrap !important
+		}
+
+		.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column {
+			flex-basis: 0;
+			flex-grow: 1
+		}
+
+		.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis] {
+			flex-grow: 0
+		}
+
+		:where(.wp-block-columns) {
+			margin-bottom: 1.75em
+		}
+
+		:where(.wp-block-columns.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-column {
+			flex-grow: 1;
+			min-width: 0;
+			overflow-wrap: break-word;
+			word-break: break-word
+		}
+
+		.wp-block-column.is-vertically-aligned-top {
+			align-self: flex-start
+		}
+
+		.wp-block-column.is-vertically-aligned-center {
+			align-self: center
+		}
+
+		.wp-block-column.is-vertically-aligned-bottom {
+			align-self: flex-end
+		}
+
+		.wp-block-column.is-vertically-aligned-stretch {
+			align-self: stretch
+		}
+
+		.wp-block-column.is-vertically-aligned-bottom,
+		.wp-block-column.is-vertically-aligned-center,
+		.wp-block-column.is-vertically-aligned-top {
+			width: 100%
+		}
+	</style>
+	<style id="wp-block-list-inline-css">
+		ol,
+		ul {
+			box-sizing: border-box
+		}
+
+		:root :where(ul.has-background, ol.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		ul.is-style-checkmark-list {
+			list-style-type: "\2713";
+		}
+
+		ul.is-style-checkmark-list li {
+			padding-inline-start: 1ch;
+		}
+	</style>
 	<style id="wp-block-image-inline-css">
 		.wp-block-image img {
 			box-sizing: border-box;
@@ -812,117 +993,6 @@
 				transform: translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)), calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));
 				visibility: hidden
 			}
-		}
-	</style>
-	<style id="wp-block-columns-inline-css">
-		.wp-block-columns {
-			align-items: normal !important;
-			box-sizing: border-box;
-			display: flex;
-			flex-wrap: wrap !important
-		}
-
-		@media (min-width:782px) {
-			.wp-block-columns {
-				flex-wrap: nowrap !important
-			}
-		}
-
-		.wp-block-columns.are-vertically-aligned-top {
-			align-items: flex-start
-		}
-
-		.wp-block-columns.are-vertically-aligned-center {
-			align-items: center
-		}
-
-		.wp-block-columns.are-vertically-aligned-bottom {
-			align-items: flex-end
-		}
-
-		@media (max-width:781px) {
-			.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
-				flex-basis: 100% !important
-			}
-		}
-
-		@media (min-width:782px) {
-			.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column {
-				flex-basis: 0;
-				flex-grow: 1
-			}
-
-			.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis] {
-				flex-grow: 0
-			}
-		}
-
-		.wp-block-columns.is-not-stacked-on-mobile {
-			flex-wrap: nowrap !important
-		}
-
-		.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column {
-			flex-basis: 0;
-			flex-grow: 1
-		}
-
-		.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis] {
-			flex-grow: 0
-		}
-
-		:where(.wp-block-columns) {
-			margin-bottom: 1.75em
-		}
-
-		:where(.wp-block-columns.has-background) {
-			padding: 1.25em 2.375em
-		}
-
-		.wp-block-column {
-			flex-grow: 1;
-			min-width: 0;
-			overflow-wrap: break-word;
-			word-break: break-word
-		}
-
-		.wp-block-column.is-vertically-aligned-top {
-			align-self: flex-start
-		}
-
-		.wp-block-column.is-vertically-aligned-center {
-			align-self: center
-		}
-
-		.wp-block-column.is-vertically-aligned-bottom {
-			align-self: flex-end
-		}
-
-		.wp-block-column.is-vertically-aligned-stretch {
-			align-self: stretch
-		}
-
-		.wp-block-column.is-vertically-aligned-bottom,
-		.wp-block-column.is-vertically-aligned-center,
-		.wp-block-column.is-vertically-aligned-top {
-			width: 100%
-		}
-	</style>
-	<style id="wp-block-list-inline-css">
-		ol,
-		ul {
-			box-sizing: border-box
-		}
-
-		:root :where(ul.has-background, ol.has-background) {
-			padding: 1.25em 2.375em
-		}
-
-		ul.is-style-checkmark-list {
-			list-style-type: "\2713";
-		}
-
-		ul.is-style-checkmark-list li {
-			padding-inline-start: 1ch;
 		}
 	</style>
 	<style id="wp-block-separator-inline-css">
@@ -2264,11 +2334,6 @@
 			margin-block-end: 0;
 		}
 
-		.wp-container-core-group-is-layout-7>.alignfull {
-			margin-right: calc(0px * -1);
-			margin-left: calc(0px * -1);
-		}
-
 		.wp-container-content-3 {
 			flex-basis: 1.25rem;
 		}
@@ -2448,6 +2513,50 @@
 			z-index: 100000;
 		}
 	</style>
+	<script src="https://retrocraftsindia.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+		id="jquery-core-js"></script>
+	<script src="https://retrocraftsindia.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+		id="jquery-migrate-js"></script>
+	<script
+		src="https://retrocraftsindia.com/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js?ver=3.90.1"
+		id="metaslider-flex-slider-js"></script>
+	<script id="metaslider-flex-slider-js-after">var metaslider_173 = function ($) {
+			$('#metaslider_173').addClass('flexslider');
+			$('#metaslider_173').flexslider({
+				slideshowSpeed: 3000,
+				animation: 'slide',
+				controlNav: true,
+				directionNav: true,
+				pauseOnHover: false,
+				direction: 'horizontal',
+				reverse: false,
+				keyboard: true,
+				touch: true,
+				animationSpeed: 600,
+				prevText: "Previous",
+				nextText: "Next",
+				smoothHeight: false,
+				fadeFirstSlide: false,
+				easing: "linear",
+				slideshow: true,
+				pausePlay: false,
+				itemWidth: 1920,
+				minItems: 1,
+				move: 1,
+				itemMargin: 0
+			});
+			$(document).trigger('metaslider/initialized', '#metaslider_173');
+		};
+		var timer_metaslider_173 = function () {
+			var slider = !window.jQuery ? window.setTimeout(timer_metaslider_173, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_173, 1) : metaslider_173(window.jQuery);
+		};
+		timer_metaslider_173();</script>
+	<script id="metaslider-script-js-extra">var wpData = { "baseUrl": "https:\/\/retrocraftsindia.com" };</script>
+	<script src="https://retrocraftsindia.com/wp-content/plugins/ml-slider/assets/metaslider/script.min.js?ver=3.90.1"
+		id="metaslider-script-js"></script>
+	<script
+		src="https://retrocraftsindia.com/wp-content/plugins/ml-slider/assets/easing/jQuery.easing.min.js?ver=3.90.1"
+		id="metaslider-easing-js"></script>
 	<link rel="https://api.w.org/" href="https://retrocraftsindia.com/wp-json/">
 	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://retrocraftsindia.com/xmlrpc.php?rsd">
 	<meta name="generator" content="WordPress 6.6.1">
@@ -2543,7 +2652,7 @@
 
 						<div id="site-title"
 							class="wp-block-group is-layout-flow wp-container-core-group-is-layout-1 wp-block-group-is-layout-flow">
-							<p style="font-size:clamp(0.896rem, 0.896rem + ((1vw - 0.2rem) * 0.74), 1.34rem);font-style:normal;font-weight:500;"
+							<p style="font-size:clamp(0.984rem, 0.984rem + ((1vw - 0.2rem) * 0.86), 1.5rem);font-style:normal;font-weight:500;"
 								class="wp-block-site-title has-heading-font-family"><a
 									href="https://retrocraftsindia.com" target="_self" rel="home"
 									aria-current="page">Retro Crafts India</a></p>
@@ -2623,10 +2732,10 @@
 
 		<main class="wp-block-group is-layout-flow wp-container-core-group-is-layout-14 wp-block-group-is-layout-flow"
 			style="margin-top:0">
-			<div class="wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-is-layout-7 wp-block-group-is-layout-constrained"
-				style="padding-top:var(--wp--preset--spacing--50);padding-right:0;padding-bottom:var(--wp--preset--spacing--50);padding-left:0">
-				<div
-					class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-6 wp-block-group-is-layout-constrained">
+			<div class="wp-block-group alignfull is-layout-flow wp-block-group-is-layout-flow"
+				style="padding-top:var(--wp--preset--spacing--30);padding-right:0;padding-bottom:0;padding-left:0">
+				<div class="wp-block-group has-global-padding is-layout-constrained wp-container-core-group-is-layout-6 wp-block-group-is-layout-constrained"
+					style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)">
 					<h1 class="wp-block-heading has-text-align-center fade-out-animation-scroll has-x-large-font-size">
 						Where Timeless Craftsmanship Meets Modern Elegance</h1>
 
@@ -2656,10 +2765,32 @@
 
 
 
-				<figure class="wp-block-image alignwide size-full width-100 fade-out-animation-scroll is-style-default">
-					<img loading="lazy" width="7680" height="4317"
-						src="https://retrocraftsindia.com/wp-content/uploads/2024/09/P1.jpg" alt="" class="wp-image-83">
-				</figure>
+				<div style="height:0px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+				<div id="metaslider-id-173" style="width: 100%; margin: 0 auto;"
+					class="ml-slider-3-90-1 metaslider metaslider-flex metaslider-173 ml-slider width-100 fade-out-animation-scroll hide-arrows-smartphone hide-navigation-smartphone ms-theme-highway has-carousel-mode has-dots-nav"
+					role="region" aria-roledescription="Slideshow" aria-label="Homepage Slideshow">
+					<div id="metaslider_container_173">
+						<div id="metaslider_173">
+							<ul class="slides">
+								<li style="display: none; width: 100%;" class="slide-175 ms-image "
+									aria-roledescription="slide" aria-label="slide-175"><img loading="lazy"
+										src="https://retrocraftsindia.com/wp-content/uploads/2024/09/P1-1920x1080.jpg"
+										height="1080" width="1920" alt="" class="slider-173 slide-175" title="P1"></li>
+								<li style="display: none; width: 100%;" class="slide-174 ms-image "
+									aria-roledescription="slide" aria-label="slide-174"><img loading="lazy"
+										src="https://retrocraftsindia.com/wp-content/uploads/2024/09/home-page-hero-image-775x435.png"
+										height="1080" width="1920" alt="" class="slider-173 slide-174"
+										title="home-page-hero-image"></li>
+								<li style="display: none; width: 100%;" class="slide-181 ms-image "
+									aria-roledescription="slide" aria-label="slide-181"><img loading="lazy"
+										src="https://retrocraftsindia.com/wp-content/uploads/2024/09/P2-1-1031x579.png"
+										height="1080" width="1920" alt="" class="slider-173 slide-181" title="P2"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 
 
@@ -3042,6 +3173,8 @@
 		events.forEach((event) => {
 			document.addEventListener(event, lazyloadRunObserver);
 		});</script>
+	<script src="https://retrocraftsindia.com/wp-content/plugins/ml-slider/themes/highway/v1.0.0/script.js?ver=1.0.0"
+		id="metaslider_highway_theme_script-js"></script>
 	<script id="wp-block-template-skip-link-js-after">(function () {
 			var skipLinkTarget = document.querySelector('main'),
 				sibling,
