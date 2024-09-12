@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Disallow: /wp-content/
+Disallow: /wp-includes/
 Sitemap: https://retrocraftsindia.com/sitemap.xml
