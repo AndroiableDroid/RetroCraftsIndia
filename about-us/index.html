@@ -1898,6 +1898,18 @@
 			border-radius: 12px;
 		}
 
+		.lightbox-image-container:has(figure):has(img) {
+			width: fit-content !important;
+		}
+
+		.lightbox-image-container>figure>img {
+			width: 100% !important;
+			aspect-ratio: auto !important;
+			object-fit: contain !important;
+			min-height: auto !important;
+			height: auto !important;
+		}
+
 		:root :where(.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th) {
 			background-color: var(--wp--preset--color--contrast-2);
 			color: var(--wp--preset--color--base);
@@ -2233,10 +2245,14 @@
 											data-wp-watch="callbacks.focusFirstElement" id="modal-1-content">
 											<ul
 												class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation">
+												<li class=" wp-block-navigation-item wp-block-navigation-link"><a
+														class="wp-block-navigation-item__content"
+														href="https://retrocraftsindia.com"><span
+															class="wp-block-navigation-item__label">Home</span></a></li>
 												<li
 													class=" wp-block-navigation-item is-style-default wp-block-navigation-link">
 													<a class="wp-block-navigation-item__content"
-														href="https://retrocraftsindia.com/products"><span
+														href="https://retrocraftsindia.com/products/"><span
 															class="wp-block-navigation-item__label">Products</span></a>
 												</li>
 												<li
