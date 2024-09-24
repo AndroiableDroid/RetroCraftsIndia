@@ -4,10 +4,6 @@
 		<loc>https://retrocraftsindia.com/</loc>
 	</url>
 	<url>
-		<loc>https://retrocraftsindia.com/about-us/</loc>
-		<lastmod>2024-09-18T06:18:22+00:00</lastmod>
-	</url>
-	<url>
 		<loc>https://retrocraftsindia.com/contact-us/</loc>
 		<lastmod>2024-09-18T06:20:29+00:00</lastmod>
 	</url>
@@ -31,6 +27,13 @@
 		</image:image>
 		<image:image>
 			<image:loc>https://retrocraftsindia.com/wp-content/uploads/2024/09/P3-1.png</image:loc>
+		</image:image>
+	</url>
+	<url>
+		<loc>https://retrocraftsindia.com/about-us/</loc>
+		<lastmod>2024-09-22T14:34:18+00:00</lastmod>
+		<image:image>
+			<image:loc>https://retrocraftsindia.com/wp-content/uploads/2024/09/rci_logo1.png</image:loc>
 		</image:image>
 	</url>
 </urlset>
