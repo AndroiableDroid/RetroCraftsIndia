@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://retrocraftsindia.com/main-sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://retrocraftsindia.com/</loc>
+		<loc>https://retrocraftsindia.com</loc>
 	</url>
 	<url>
 		<loc>https://retrocraftsindia.com/contact-us/</loc>
@@ -31,7 +31,7 @@
 	</url>
 	<url>
 		<loc>https://retrocraftsindia.com/about-us/</loc>
-		<lastmod>2024-09-22T14:34:18+00:00</lastmod>
+		<lastmod>2024-09-29T08:20:39+00:00</lastmod>
 		<image:image>
 			<image:loc>https://retrocraftsindia.com/wp-content/uploads/2024/09/rci_logo1.png</image:loc>
 		</image:image>
